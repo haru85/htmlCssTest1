@@ -3,10 +3,10 @@
     width: 1040px; /* respo */
 }
 
-/** {
+body {
     margin: 0px;
     padding: 0px;
-}*/
+}
 
 /* header */
 header {
@@ -16,13 +16,15 @@ header {
     padding: 0px;
 }
 
+.topper-wrapper {
+    width: 96%;
+    margin: 0px auto 20px;
+}
+
 .topper {
-    width: 90%;
-    padding: 20px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .header-logo {
@@ -33,13 +35,14 @@ header {
 .header-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     margin: 0;
 }
 
 .header-list li {
     list-style: none;
-    margin: 0px 20px;
+    margin: 0 0 0 42px;
     text-align: center;
 }
 
@@ -50,16 +53,17 @@ header {
 .header-list li:not(:last-child) a {
     display: inline-block;
     color: black;
-    font-weight: bold;
+    font-weight: 900;
     text-decoration:none;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 15px;
     margin: 20px 0;
+    font-family:  'Lato', sans-serif;
 } 
 
 .header-list span {
-    font-weight: normal;
-    font-size: 10px;
+    font-weight: 500;
+    font-size: 9px;
 }
 
 .header-list li:last-child a {
@@ -67,11 +71,12 @@ header {
     background-color: #f79210;
     color: #fff;
     font-size: 12px;
+    font-family: 'Yu Gothic';
     border-radius: 38px;
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    padding: 12px 20px;
+    padding: 12px 23px;
     margin: 20px 0;
     text-decoration: none;
     font-weight: normal;
@@ -84,35 +89,41 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 38px;
+    font-size: 36px;
     color: #333333;
+    margin: 15px auto 0;
 }
 
 .header-images {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin: 30px auto 0;
+    margin: 15px auto 0;
 }
 
 .header-images img {
     display: inline-block;
 }
 
-.header-images:nth-child(2) img {
-    margin: 0 15px;
+
+.header-images img:nth-child(2){
+    margin: 0 10px;
+    width: 200px;
+    height: 200px;
 }
 
 .header-message a {
     display: block;
+    width: fit-content;
     text-decoration: none;
     color: #fff;
     background-color: #f79210;
     align-items: center;
-    padding: 22px 150px;
-    font-size: 15px;
+    padding: 20px 140px;
+    font-size: 16px;
+    text-align: center;
     border-radius: 32px;
-    margin: 30px auto 75px auto;
+    margin: 20px auto 75px auto;
 }
 
 .header-message a:hover {
@@ -120,9 +131,11 @@ header h1 {
 }
 
 .header-notice {
-    color: #A2A2A4;
+    color: #C0C0C0;
     font-size: 12px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 100;
 }
 
 .header-notice li {
@@ -159,14 +172,20 @@ header h1 {
 }
 
 h2 {
-    font-size: 38px;
+    font-size: 36px;
     letter-spacing: 3.8px;
-    font-weight: 700;
-    font-family: 'ヒラギノ';
+    font-weight: 800;
+    margin: 0;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
 
 h2 > span {
     font-family: 'Lato, sanserif';
     font-weight: bold;
     font-weight: 900;
+}
+
+.content1 p {
+    font-size: 16px;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
