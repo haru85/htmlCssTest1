@@ -1,6 +1,7 @@
 .container {
     margin: 0 auto;
-    width: 1040px; /* respo */
+    max-width: 1040px;
+    width: 90%;
 }
 
 body {
@@ -10,8 +11,11 @@ body {
 
 /* header */
 header {
+    width: 100%;
+    height: 665px;
     background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
     background-size: cover;
+    background-position: center;
     margin: 0px;
     padding: 0px;
 }
@@ -82,8 +86,40 @@ header {
     font-weight: normal;
 }
 
+.humberger {
+    position: relative;
+    height: 20px;
+    width: 30px;
+    display: none;
+    margin: 15px 0;
+}
+
+.humberger div {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 28px;
+    background-color: #666;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  .humberger div:nth-of-type(1) {
+    bottom: 20px;
+  }
+
+  .humberger div:nth-of-type(2) {
+    bottom: 10px;
+  }
+
+  .humberger div:nth-of-type(3) {
+    bottom: 0;
+  }
+  
+
 .header-message {
-    width: 50%;
+    width: fit-content;
     align-items: left;
 }
 
@@ -133,15 +169,20 @@ header h1 {
 .header-notice {
     color: #C0C0C0;
     font-size: 12px;
-    padding-bottom: 15px;
+    /*padding-bottom: 15px; */
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 100;
+}
+
+ul {
+    padding: 0;
 }
 
 .header-notice li {
     list-style: none;
 }
 
+/* content1 */
 .content1 {
     background-color: #f79210;
     display: flex;
@@ -153,10 +194,9 @@ header h1 {
     justify-content: center;
 }
 
-.content1 video {
+video {
     width: 50%;
-    height: 294px;
-    margin: 42px 0;
+    margin: 0;
 }
 
 .content1-message {
@@ -188,4 +228,169 @@ h2 > span {
 .content1 p {
     font-size: 16px;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+
+/* respnsible */
+
+@media screen and (max-width: 1150px) {
+
+    header {
+        background-size: cover;
+        height: 690px;
+    }
+
+    .topper-wrapper {
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .responsible-wrapper {
+        width: 96%;
+        margin: 0px auto;
+    }
+    
+    .header-logo {
+        margin-top: 20px;
+    }
+    .header-list {
+        display: none;
+    }
+
+    .humberger {
+        display: inline-block;
+    }
+
+    .header-message {
+        margin-top: 50px;
+    
+    }
+    
+    h1 {
+        padding-top: 110px;
+    }
+
+    h2 {
+        margin-top: 50px;
+        font-size: 33px;
+    }
+
+    video {
+        aspect-ratio: 16 / 9;
+        margin-top: 40px;
+    }
+
+    .content1-message {
+        padding: 0 0 0 40px;
+    }
+
+    .content1-message p {
+        padding: 0;
+        margin: 10px 25px 10px 0;
+    }
+
+    .content1-message img {
+        display: block;
+        margin: 30px auto 30px auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .content1 .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        width: 75%;
+        padding-bottom: 20px;
+    }
+
+    .content1-message {
+        width: 75%;
+    }
+
+    
+}
+
+@media screen and (max-width: 765px) {
+    header {
+        background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        height: auto;
+    }
+
+    .header-logo {
+        height: 16px;
+        width: 148px;
+        margin-top: 9px;
+        margin-left: 9px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .header-message {
+        margin: 50px auto 0 auto;
+    }
+
+    h1 {
+        margin-top: 50px!important;
+        padding-top: 62vw;
+        font-size: 25px!important;
+    }
+
+    .header-images img {
+        height: 24vw;
+        width: 24vw;
+    }
+
+    .header-images img:nth-child(2) {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    .header-message a {
+        margin-bottom: 15px;
+        padding: 20px 25vw;
+    }
+
+    .header-notice {
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    .content1 .container {
+        width: 92%;
+        display: flex;
+        align-items: start;
+    }
+
+    video {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .content1-message {
+        padding: 0;
+        width: 100%;
+    }
+
+    .content1-message p {
+        padding: 0;
+    }
+
+    .content1-message img {
+        margin: 40px auto 30px auto;
+    }
 }
