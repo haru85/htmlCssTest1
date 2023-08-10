@@ -387,7 +387,7 @@ h2 > span {
     }
 
     .content1-message p {
-        padding: 0;
+        margin: 10px 0;
     }
 
     .content1-message img {
