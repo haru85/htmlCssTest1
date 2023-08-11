@@ -359,7 +359,7 @@ h2 > span {
 
     .header-message a {
         margin-bottom: 15px;
-        padding: 20px 25vw;
+        padding: 20px calc(45vw - 8 * 13px);
     }
 
     .header-notice {
